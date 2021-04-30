@@ -1,0 +1,51 @@
+.section {
+    margin: 10px 0;
+    padding: 15px 10px;
+    border: 2px solid hsl(240, 24%, 34%);
+    border-radius: 5px;
+    background-color: #eceaea;
+}
+
+.section__header {
+    color: #eee;
+    background-color: #41416b;
+    text-align: center;
+    border: 2px solid #1d1d4e;
+    border-radius: 5px;
+    margin: 10px 0px 20px;
+    padding: 10px;
+    box-shadow: 3px 3px 10px 3px #505053;
+}
+
+.section__button {
+    background-color: #f9f9f9;
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.section__button:hover {
+    outline: none;
+    color: #f9f9f9;
+    background-color: #41416b;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.section__button:active {
+    color: #f5cb70;
+}
+
+.section__image {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid #666666;
+    border-radius: 20px;
+}
+
+

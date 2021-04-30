@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrian Wilk - moja pierwsza strona</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link href="css/globalStyle.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/tableContainer.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="body">
+    <nav class="navigation">
+        <ul class="navigation__list">
+            <li class="navigation__element"> <a class="navigation__link" href="#strona-główna">Strona główna</a></li>
+            <li class="navigation__element"> <a class="navigation__link" href="#o-mnie">O mnie</a></li>
+            <li class="navigation__element"> <a class="navigation__link" href="#zainteresowania">Zainteresowania</a>
+            </li>
+            <li class="navigation__element"> <a class="navigation__link" href="#dla-kibica">Dla Kibica</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="section" id="strona-główna">
+            <div>
+                <button class="section__button js-buttonChangeBodyColor">Zmień kolor tła</button>
+                <button class="section__button js-hidePhotoButton"><span class="js-imageTextButton">Ukryj</span>
+                    zdjęcie</button>
+            </div>
+
+            <header>
+                <h1 class="section__header">Jestem Adrian a to strona poświęcona mojej osobie</h1>
+            </header>
+
+            <div class="js-image">
+                <img class="section__image" src="images/adrian.jpg" alt="Adrian Wilk">
+            </div>
+
+        </section>
+
+        <section class="section" id="o-mnie">
+            <h2 class="section__header">O mnie</h2>
+            <p>
+                Pochodzę z małej wsi w województwie Świętokrzyskim a od 5 lat mieszkam w Olsztynie gdzie ukonczyłem
+                studia
+                informatyczne
+                na UWM. W marcu skończyłem <strong>26 lat</strong>. Obecnie od
+                ponad 2 lat pracuję jako specjalista do spraw utrzymania baz danych w Orange
+            </p>
+        </section>
+
+        <section class="section" id="zainteresowania">
+            <h2 class="section__header">Zainteresowania</h2>
+            <p>
+                Intersuję się wieloma dyscyplinami sportu ale na pierwszym miejscu jest piłka nozna. Moim pierwszym
+                świadomie
+                oglądanym meczem był finał Ligi Mistrzów z 2005 roku gdzie AC Milan podejmował Liverpool. Był to
+                niezapomniany
+                wieczór pełen wrażen, w którym narodziła się moja pasja do piłki nożnej.<br>Oprócz sportu lubie słuchac
+                wszelkiej muzyki, oglądac filmy a co z tym idzie
+                częste
+                wypady do kina.
+            </p>
+        </section>
+
+        <section class="section" id="dla-kibica">
+            <h2 class="section__header">Dla Kibica</h2>
+            <p>Moim ulubionym klubem piłkarskim jest Real Madryt. Poniżej terminarz nadchodzących spotkań. <i>Hala
+                    Madrid!</i>
+            </p>
+
+            <div class="tableContainer">
+                <table class="table">
+                    <caption class="table__caption">Terminarz nadchodzacych spotkań Realu Madryt</caption>
+                    <tr class="table__tableRow">
+                        <th class="table__tableCell table__tableCell--header" scope="col">Termin meczu</th>
+                        <th class="table__tableCell table__tableCell--header" scope="col">Rozgrywki</th>
+                        <th class="table__tableCell table__tableCell--header" scope="col">Faza rozgrywek</th>
+                        <th class="table__tableCell table__tableCell--header" scope="col">Stadion (Miasto)</th>
+                        <th class="table__tableCell table__tableCell--header" scope="col">Przeciwnik</th>
+                    </tr>
+                    <tr class="table__tableRow">
+                        <th class="table__tableCell table__tableCell--header" scope="row">21.04.2021</th>
+                        <td class="table__tableCell">LaLiga</td>
+                        <td class="table__tableCell">31 kolejka</td>
+                        <td class="table__tableCell">Estadio Ramón de Carranza (Cadiz)</td>
+                        <td class="table__tableCell">Cadiz CF</td>
+                    </tr>
+                    <tr class="table__tableRow">
+                        <th class="table__tableCell table__tableCell--header" scope="row">24.04.2021</th>
+                        <td class="table__tableCell">LaLiga</td>
+                        <td class="table__tableCell">32 kolejka</td>
+                        <td class="table__tableCell" rowspan="3">Estadio Alfredo Di Stéfano (Madryt)</td>
+                        <td class="table__tableCell">Real Betis</td>
+                    </tr>
+                    <tr class="table__tableRow">
+                        <th class="table__tableCell table__tableCell--header" scope="row">02.05.2021</th>
+                        <td class="table__tableCell">LaLiga</td>
+                        <td class="table__tableCell">34 kolejka</td>
+                        <td class="table__tableCell">CA Osasuna</td>
+                    </tr>
+                    <tr class="table__tableRow">
+                        <th class="table__tableCell table__tableCell--header" scope="row">09.05.2021</th>
+                        <td class="table__tableCell">LaLiga</td>
+                        <td class="table__tableCell">35 kolejka</td>
+                        <td class="table__tableCell">Sevilla FC</td>
+                    </tr>
+                    <tr class="table__tableRow">
+                        <th class="table__tableCell table__tableCell--header" scope="row">12.05.2021</th>
+                        <td class="table__tableCell">LaLiga</td>
+                        <td class="table__tableCell">36 kolejka</td>
+                        <td class="table__tableCell">Estadio Nuevo Los Cármenes (Granada)</td>
+                        <td class="table__tableCell">Granada CF</td>
+                    </tr>
+                    <tr class="table__tableRow">
+                        <th class="table__tableCell table__tableCell--header" scope="row">16.05.2021</th>
+                        <td class="table__tableCell">LaLiga</td>
+                        <td class="table__tableCell">37 kolejka</td>
+                        <td class="table__tableCell">Estadio San Mamés (Bilbao)</td>
+                        <td class="table__tableCell">Athletic Club</td>
+                    </tr>
+                    <tr class="table__tableRow">
+                        <th class="table__tableCell table__tableCell--header" scope="row">23.05.2021</th>
+                        <td class="table__tableCell">LaLiga</td>
+                        <td class="table__tableCell">38 kolejka</td>
+                        <td class="table__tableCell">Estadio Alfredo Di Stéfano (Madryt)</td>
+                        <td class="table__tableCell">Villarreal CF</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3 class="section__header">Moje Motto</h3>
+            <p class="js-motto">
+                Nieważne, jak wiele ciosów jesteś w stanie zadać, ważne, jak wiele ciosów jesteś w stanie przyjąć, aby
+                iść dalej. Tak się wygrywa.
+            </p>
+            <p>
+                <button class="section__button js-hideMottoButton"><span class="js-mottoTextButton">Ukryj</span>
+                    motto</button>
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; Copyright 2021 Adrian Wilk uczestnik kursu: <a class="footer__link" target="_blank"
+                rel="noreferrer noopener" title="Kurs frontend developer od podstaw - YouCode"
+                href="https://youcode.pl/frontend-developer/">YouCode</a> (link otworzy się w nowej karcie) </p>
+    </footer>
+</body>
+
+</html>

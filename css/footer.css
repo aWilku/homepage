@@ -1,0 +1,21 @@
+.footer {
+    border-top: 2px solid #41416b;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #e08e16;
+    padding: 0px 2px;
+}
+
+.footer__link:hover {
+    outline: none;
+    color: #ba7712;
+}
+
+.footer__link:active {
+    color: #41416b;
+}
