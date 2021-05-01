@@ -2,10 +2,11 @@ console.log("Witaj");
 
 let changeBodyColorButton = document.querySelector(".js-buttonChangeBodyColor");
 let body = document.querySelector("body")
+let themeName = document.querySelector(".js-themeName")
 
 changeBodyColorButton.addEventListener("click", () => {
     body.classList.toggle("body--special");
-
+    themeName.innerText = body.classList.contains("body--special") ? "jasne" : "ciemne";
 })
 
 let hideMottoButton = document.querySelector(".js-hideMottoButton");
